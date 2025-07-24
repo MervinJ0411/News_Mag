@@ -1,12 +1,57 @@
-# React + Vite
+# 📰 React News App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a responsive News Application built with **React** that fetches and displays the latest news articles. It features:
 
-Currently, two official plugins are available:
+- Responsive grid layout with Tailwind CSS
+- Individual news article page with image, author, date, content, and description
+- Clickable cards to navigate to detailed views
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## Expanding the ESLint configuration
+- Fetches news from an external API (like NewsAPI or custom backend)
+- Display articles in a 4-column layout (responsive)
+- NewsCard component with image + content section
+- Clean, modern UI with Tailwind CSS
+- Error handling for missing data
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🖼️ Screenshots
+
+![News List Page](screenshots/news-grid.png)
+![News Detail Page](screenshots/news-detail.png)
+
+> 📌 Add your own screenshots in a `/screenshots` folder to help visualize your app.
+
+## 🛠️ Tech Stack
+
+- **React.js** – Frontend UI
+- **Tailwind CSS** – Styling
+- **Axios / Fetch** – API Requests
+- **React Router DOM** – Page navigation
+- **Optional**: Express.js + MongoDB for custom backend
+
+
+
+## 📦 Installation
+
+git clone https://github.com/your-username/news-app.git
+cd news-app
+npm install
+
+ Running the App
+
+ npm run dev   
+
+ API Setup
+
+ {
+  "author": "Author Name",
+  "title": "News Title",
+  "description": "Short summary...",
+  "content": "Full content...",
+  "publishedAt": "2025-07-23T01:00:00Z",
+  "urlToImage": "https://image-url.jpg",
+  "source": {
+    "name": "News Source"
+  }
+}
+  
